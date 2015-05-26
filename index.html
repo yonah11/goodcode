@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Курс программирования на Python</title>
+		<title>GoodCode – Онлайн уроки программирования на Python</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -13,37 +13,12 @@
 		<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
 		<link href="css/flexslider.css" rel="stylesheet" media="screen">
 		<link href="css/fancySelect.css" rel="stylesheet" media="screen">
-    <link href="css/responsive.css" rel="stylesheet" media="screen">
-    <link href="css/square/blue.css" rel="stylesheet" media="screen">
+		<link href="css/responsive.css" rel="stylesheet" media="screen">
 
 		<!--== Google Fonts ==-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-		
-		<!--== Javascript Files ==-->
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<script src="js/jquery-2.1.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.scrollTo.js"></script>
-		<script src="js/jquery.nav.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.flexslider.js"></script>
-		<script src="js/jquery.accordion.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/jquery.fitvids.js"></script>
-		<script src="js/fancySelect.js"></script>
-		<script src="js/main.js"></script>
-    <script src="js/icheck.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('input').iCheck({
-          checkboxClass: 'icheckbox_square-blue',
-          radioClass: 'iradio_square-blue',
-          increaseArea: '20%' // optional
-        });
-      });
-    </script>
-    
+
 	</head>
 	<body>
 		<header id="header">
@@ -52,27 +27,27 @@
 					<div class="row">
 						<nav role="navigation" class="col-sm-12">
 							<div class="navbar-header">
-								<!--== Logo ==-->
-								<span class="navbar-brand logo">
-									<a href="index.html"><img src="images/logo.jpg"></a>
-								</span>
-                
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">Навигация</span>
+									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
 
-								
+								<!--== Logo ==-->
+								<span class="navbar-brand logo">
+									<a href="#header"><span class="fa"><img src="images/logo.png"></span>GOODCODE</a>
+								</span>
 
 							</div>
 							<div class="navbar-collapse collapse">
 
 								<!--== Navigation Menu ==-->
 								<ul class="nav navbar-nav">
-									<li class="current"><a href="#header">Домой</a></li>
-									<li><a href="#benefits">Преимущества</a></li>
+									<li><a href="#whatisthis">Что это такое?</a></li>
+									<li><a href="#lessons">Уроки</a></li>
+									<li><a href="#platform">Платформа</a></li>
+									<li><a href="#teach">Обучение</a></li>
 									<li><a href="#about">О проекте</a></li>
 								</ul>
 
@@ -87,12 +62,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="blk">
-							<h1>Бесплатный курс<br/>программирования на Python</h1>
+							<h1>Онлайн уроки<br/>программирования на Python</h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="blk">
-							<input type="submit" value="Начать" name="submit" id="goregister">
+							<input type="submit" value="Начать" name="submit">
 						</div>
 					</div>
 				</div>
@@ -106,8 +81,8 @@
 
 					<!--== Main Slider ==-->
 					<ul class="slides">
-						<li><img src="images/bg-slide-01.png" alt="Slide Image"/></li>
-						<li><img src="images/bg-slide-02.png" alt="Slide Image 2"/></li>
+						<li><img src="images/reel/bg-slide-01.jpg" alt="GoodCode Lessons 1"/></li>
+						<li><img src="images/reel/bg-slide-02.jpg" alt="GoodCode Lessons 2"/></li>
 					</ul>
 
 				</div>
@@ -116,23 +91,24 @@
 
 		<div class="content">
 			<div class="container box">
-
-
+			
 				<!--===============================-->
-				<!--== Speakers ===================-->
+				<!--== What is this ===================-->
 				<!--===============================-->
-				<section id="benefits" class="row">
+				<section id="whatisthis" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-center">
 							<h2>Обучение для всех</h2>
-							<h4>GoodCode легко и быстро научит программировать на языке Python.</h4>
+							<h4>GoodCode интересно и доступно научит программировать на языке Python.</h4>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="benefits">
-							<div class="benefits-info">
-								<div class="benefits-photo">
-									<img src="images/demo/speakers/speaker-01.jpg" alt="Speaker 1">
+						<div class="speaker">
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="images/bubbles/bubble-01.jpg" alt="Speaker 1">
+								</div>								
+								<div class="speaker-contacts">
 								</div>
 							</div>
 							<h3>Онлайн уроки</h3>
@@ -140,63 +116,131 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="benefits">
-							<div class="benefits-info">
-								<div class="benefits-photo">
-									<img src="images/demo/speakers/speaker-02.jpg" alt="Speaker 2">
+						<div class="speaker">
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="images/bubbles/bubble-02.jpg" alt="Speaker 2">
+								</div>
+								<div class="speaker-contacts">
 								</div>
 							</div>
-							<h3>Компилятор</h3>
-							<p>Используйте онлайн компилятор для программирования собственных идей.</p>
+							<h3>Платформа</h3>
+							<p>Используйте интерпретатор для программирования собственных идей.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="benefits">
-							<div class="benefits-info">
-								<div class="benefits-photo">
-									<img src="images/demo/speakers/speaker-03.jpg" alt="Speaker 3">
+						<div class="speaker">
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="images/bubbles/bubble-03.jpg" alt="Speaker 3">
+								</div>
+								<div class="speaker-contacts">
 								</div>
 							</div>
 							<h3>Обучение</h3>
-							<p>Обучайте программированию детей в своем окружении с помощью GoodCode.</p>
+							<p>Обучайте программированию детей вместе с GoodCode.</p>
 						</div>
 					</div>
 				</section>
 				<!--==========-->
 				
 				
-				
 				<!--===============================-->
-				<!--== Image Slider ===============-->
+				<!--== Lessons ===============-->
 				<!--===============================-->
-				<section id="about" class="row separated">
+				<section id="lessons" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-left">
-							<h2>О проекте</h2>
-							<h4>Awesome section description goes here.</h4>
+							<h2>Онлайн уроки</h2>
 						</div>
 					</div>
 					<div class="col-md-5 col-sm-12">
-						<h3>Lorem ipsum</h3>
 						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
-						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quas, quibusdam, impedit ducimus nisi fugiat veritatis cupiditate commodi</blockquote>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
 					</div>
 					<div class="col-md-7 col-sm-12">
 						<div class="flexslider">
 							<ul class="slides">
-								<li><img src="images/demo/slide-01.jpg" alt="Slide Image"/></li>
+								<li><img src="images/sliders/slide-01.jpg" alt="Programming kids"/></li>
+								<li><img src="images/sliders/slide-02.jpg" alt="Slide Image 2"/></li>
 							</ul>
 						</div>
 					</div>
 				</section>
 				<!--==========-->
-        
+
+				<!--===============================-->
+				<!--== Platform ======================-->
+				<!--===============================-->
+				<section id="platform" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Платформа</h2>
+						</div>
+					</div>
+					<div class="col-sm-12">
+					</div>
+					<div class="col-sm-12">
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
+						<iframe src="https://trinket.io/embed/python/52cc308b1a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
+					</div>
+				</section>
+				<!--==========-->
+
+				
+
+				<!--===============================-->
+				<!--== Teach ===============-->
+				<!--===============================-->
+				<section id="teach" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Обучение</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
+					</div>
+					<div class="col-md-7 col-sm-12">
+						<div class="flexslider">
+							<ul class="slides">
+								<li><img src="images/sliders/slide-03.jpg" alt="Teacher and kids"/></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+				
+
+				<!--===============================-->
+				<!--== About ===============-->
+				<!--===============================-->
+				<section id="about" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>О проекте</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-12">
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quos, ratione, optio, blanditiis deserunt saepe iure sunt odit atque eius voluptatum labore excepturi explicabo aliquid sapiente porro voluptas commodi sint?</h4>
+					</div>
+					<div class="col-md-7 col-sm-12">
+						<div id="last-flexslider" class="flexslider">
+							<ul class="slides">
+								<li><img src="images/sliders/slide-05.jpg" alt="GoodCode logo"/></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
 
 				<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
-		<footer id="footer">
-			
+		<footer id="footer">			
 			<div class="footer">
 				<div class="container box">
 
@@ -212,15 +256,29 @@
 						</div>
 						<div class="col-sm-4 text-right">
 							<div class="copyrights">
-                Все права защищены © 2014
+								Все права защищены. © 2015
 							</div>
 						</div>
 					</section>
 
 				</div>
 			</div>
-		</footer>		
-		
+		</footer>
+
+		<!--== Javascript Files ==-->
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/jquery.accordion.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+		<script src="js/gmap3.js"></script>
+		<script src="js/fancySelect.js"></script>
+		<script src="js/main.js"></script>
 
 	</body>
 </html>

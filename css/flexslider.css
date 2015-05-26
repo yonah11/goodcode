@@ -53,11 +53,12 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider { margin: 0 0 60px; padding: 20px; background: #efefef; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; zoom: 1; }
+.flexslider { margin: 0 0 0px; padding: 20px; background: #efefef; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; zoom: 1; }
 .flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
 .loading .flex-viewport { max-height: 300px; }
 .flexslider .slides { zoom: 1; }
 .carousel li { margin-right: 5px; }
+#last-flexslider { margin-bottom: 40px; }
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
