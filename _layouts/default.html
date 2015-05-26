@@ -81,6 +81,7 @@
 	                                		{% for post in posts reversed %}
 	                                			{% if post.title != "" %}
 	                                    			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	                                    		{% endif %}
 	                                    	{% endfor %}
 	                                    {% endfor %}
 	                                </ul>
