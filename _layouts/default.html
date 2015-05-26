@@ -71,7 +71,12 @@
                 <div class="sidebar-inner">
                     <div class="si-inner">                        
                         <ul class="main-menu">
-                            <li class=""><a href="{{ site.url }}/100"><i class="md md-home"></i> Введение</a></li>
+                        	{% if page.url == '100' %}
+                            	<li class="active"><a href="{{ site.url }}/100"><i class="md md-home"></i> Введение</a></li>
+                            {% else %}
+                            	<li class=""><a href="{{ site.url }}/100"><i class="md md-home"></i> Введение</a></li>
+                            {% endif %}
+                            
                             {% for category in site.categories %}
                             
                             
