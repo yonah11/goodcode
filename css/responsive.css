@@ -7,6 +7,7 @@
 	.header-cta h1 { font-size: 4.5rem; }
 	.col-xs-6 { width: 100%; }
 	.navbar-brand.logo > a > span > img { top: -15px; }
+	.header-inner .logo a { padding: 0px 0px; }
 
 }
 
