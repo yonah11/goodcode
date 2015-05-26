@@ -1,0 +1,9 @@
+title: GoodCode
+description: Online lessons on programming in Python.
+url: http://labworks.kz/goodcode-lessons
+author: Gizat Makhanov
+email: me@gizat.kz
+
+permalink: /:title
+pygments: true
+markdown: redcarpet

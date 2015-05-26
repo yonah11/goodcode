@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+        
+        <!-- Google Fonts -->
+        <!-- <link href='http//fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'> -->
+
+        <!-- Vendor CSS -->
+        <link href="{{ site.url }}/css/vendors/fullcalendar.css" rel="stylesheet">
+        <link href="{{ site.url }}/css/vendors/animate.min.css" rel="stylesheet">
+        <link href="{{ site.url }}/css/vendors/sweet-alert.min.css" rel="stylesheet">
+        <link href="{{ site.url }}/css/vendors/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="{{ site.url }}/css/vendors/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="{{ site.url }}/css/app.min.1.css" rel="stylesheet">
+        <link href="{{ site.url }}/css/app.min.2.css" rel="stylesheet">
+        
+	    <style type="text/css"></style>
+	    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>
+    </head>
+    
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html">
+                    	<img src="{{ site.url }}/img/logo.png">
+                    	<span id="logo-name">GoodCode</span>
+                    </a>
+                </li>
+                
+                <li class="pull-right">
+	                <ul class="top-menu">
+	                    <li id="toggle-width">
+	                        <div class="toggle-switch">
+	                            <input id="tw-switch" type="checkbox" hidden="hidden">
+	                            <label for="tw-switch" class="ts-helper"></label>
+	                        </div>
+	                    </li>
+	                    
+	                    <li id="top-search">
+	                        <a class="tm-search" href="googe.kz"></a>
+	                    </li>
+					</ul>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">                        
+                        <ul class="main-menu">
+                            <li class=""><a href="{{ post.url }}"><i class="md md-home"></i> Введение</a></li>
+                            {% for category in site.categories %}
+                            	<li class="sub-menu">
+                                	<a href=""><i class="md md-my-library-books"></i> {{ category | first }}</a>
+
+	                                <ul>
+	                                	{% for posts in category %}
+	                                		{% for post in posts reversed %}
+	                                    		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	                                    	{% endfor %}
+	                                    {% endfor %}
+	                                </ul>
+								</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </aside>   
+            
+            <section id="content">
+                <div class="container">
+                
+                {{ content }}
+                
+                </div>
+            </section>
+        </section>	
+        
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">IE SUCKS!</h1>
+                <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+                <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
+            </div>   
+        <![endif]-->
+        
+        <!-- Javascript Libraries -->
+        <script src="{{ site.url }}/js/jquery-2.1.1.min.js"></script>
+        <script src="{{ site.url }}/js/bootstrap.min.js"></script>
+        
+        <script src="{{ site.url }}/js/jquery.flot.min.js"></script>
+        <script src="{{ site.url }}/js/jquery.flot.resize.min.js"></script>
+        <script src="{{ site.url }}/js/curvedLines.js"></script>
+        <script src="{{ site.url }}/js/jquery.sparkline.min.js"></script>
+        <script src="{{ site.url }}/js/jquery.easypiechart.min.js"></script>
+        
+        <script src="{{ site.url }}/js/moment.min.js"></script>
+        <script src="{{ site.url }}/js/fullcalendar.min.js"></script>
+        <script src="{{ site.url }}/js/jquery.simpleWeather.min.js"></script>
+        <script src="{{ site.url }}/js/jquery.autosize.min.js"></script>
+        <script src="{{ site.url }}/js/jquery.nicescroll.min.js"></script>
+        <script src="{{ site.url }}/js/waves.min.js"></script>
+        <script src="{{ site.url }}/js/bootstrap-growl.min.js"></script>
+        <script src="{{ site.url }}/js/sweet-alert.min.js"></script>
+        
+        <script src="{{ site.url }}/js/curved-line-chart.js"></script>
+        <script src="{{ site.url }}/js/line-chart.js"></script>
+        <script src="{{ site.url }}/js/charts.js"></script>
+        
+        <script src="{{ site.url }}/js/charts.js"></script>
+        <script src="{{ site.url }}/js/functions.js"></script>
+  
+  </body>
+</html>
