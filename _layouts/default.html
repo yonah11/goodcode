@@ -73,14 +73,35 @@
                         <ul class="main-menu">
                             <li class=""><a href="{{ site.url }}/100"><i class="md md-home"></i> Введение</a></li>
                             {% for category in site.categories %}
-                            	<li class="sub-menu">
-                                	<a href=""><i class="md md-my-library-books"></i> {{ category | first }}</a>
+                            
+                            
+                            	{% assign toggled = false %}
+                            	
+	                            {% for posts in category %}
+		                        	{% for post in posts %}
+		                        		{% if page.url == post.url %}
+		                                    {% assign toggled = true %}
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
+								
+								{% if toggled %}
+									<li class="sub-menu active toggled">
+		                                <a href=""><i class="md md-bookmark"></i> {{ category | first }}</a>
+								{% else %}
+									<li class="sub-menu">
+		                                <a href=""><i class="md md-bookmark-outline"></i> {{ category | first }}</a>
+								{% endif %}
 
 	                                <ul>
 	                                	{% for posts in category %}
 	                                		{% for post in posts reversed %}
 	                                			{% if post.title != null %}
-	                                    			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	                                				{% if page.url != post.url %}
+	                                    				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	                                    			{% else %}
+	                                    				<li><a class="active" href="{{ post.url }}">{{ post.title }}</a></li>
+	                                    			{% endif %}
 	                                    		{% endif %}
 	                                    	{% endfor %}
 	                                    {% endfor %}
