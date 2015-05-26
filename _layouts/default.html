@@ -37,7 +37,7 @@
                 </li>
             
                 <li class="logo">
-                    <a href="index.html">
+                    <a href="{{ site.url }}">
                     	<img src="{{ site.url }}/images/logo-inversed.png">
                     	<span id="logo-name">GoodCode</span>
                     </a>
@@ -71,7 +71,7 @@
                 <div class="sidebar-inner">
                     <div class="si-inner">                        
                         <ul class="main-menu">
-                            <li class=""><a href="{{ post.url }}"><i class="md md-home"></i> Введение</a></li>
+                            <li class=""><a href="{{ site.url }}/100"><i class="md md-home"></i> Введение</a></li>
                             {% for category in site.categories %}
                             	<li class="sub-menu">
                                 	<a href=""><i class="md md-my-library-books"></i> {{ category | first }}</a>
@@ -79,7 +79,8 @@
 	                                <ul>
 	                                	{% for posts in category %}
 	                                		{% for post in posts reversed %}
-	                                    		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	                                			{% if post != 0 %}
+	                                    			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	                                    	{% endfor %}
 	                                    {% endfor %}
 	                                </ul>
