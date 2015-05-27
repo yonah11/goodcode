@@ -1,7 +1,7 @@
 /*--------------------
 Color Scheme =======*/
 
-input[type='submit'], .nav li.current a, .speaker-contacts > .contact:hover, 
+input[type='submit'], .nav li.current a, 
 .social-icons li a:hover, .form-notification, .table-price, .gotop:hover, 
 .preloader div, .owl-btn.prev:hover, .owl-btn.next:hover,
 .flex-control-paging li a.flex-active, .flex-control-paging li a.flex-active:hover, 
@@ -11,13 +11,13 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
 	background-color: #0099cc; /* <- Paste here your prefered color */
 }
 
-a, .accordion-heading span, .speaker-contacts > .contact, 
+a, .accordion-heading span, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
 	color: #0099cc; /* <- Paste here your prefered color */
 }
 
-.speaker:hover .speaker-photo, .speaker-contacts > .contact, 
+.speaker-photo, .speaker-contacts > .contact, 
 .social-icons li a:hover, .gotop:hover, .speaker-contacts > .contact:hover {
 	border-color: #0099cc; /* <- Paste here your prefered color */
 }
