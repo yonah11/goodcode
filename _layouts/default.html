@@ -61,8 +61,11 @@
             
             <!-- Top Search Content -->
             <div id="top-search-wrap">
-                <input type="text">
-                <i id="top-search-close">&times;</i>
+                <form role="search" method="get" action="{{ site.url }}/search">
+	                <input type="text" id="searchString" name="searchString">
+	                <i id="top-search-close">&times;</i>
+	            </form>
+                
             </div>
         </header>
         
